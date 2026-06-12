@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- TV screen -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M8,10h32c2.2,0 4,1.8 4,4v20c0,2.2 -1.8,4 -4,4H8c-2.2,0 -4,-1.8 -4,-4V14c0,-2.2 1.8,-4 4,-4z" />
+    <!-- Play triangle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,16l14,8 -14,8z" />
+    <!-- TV stand -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M18,38h12l2,4H16z" />
+</vector>

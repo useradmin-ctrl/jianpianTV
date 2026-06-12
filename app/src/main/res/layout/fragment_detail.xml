@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="40dp"
+    android:background="@android:color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- 左侧：海报 + 基本信息 -->
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="32dp"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/detail_poster"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/darker_gray"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/detail_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="8dp"
+            android:maxLines="5" />
+
+        <TextView
+            android:id="@+id/detail_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:maxLines="6" />
+    </LinearLayout>
+
+    <!-- 右侧：剧集列表 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/episodes_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶ 剧集列表（上下选择，点击播放）"
+            android:textSize="20sp"
+            android:textColor="#FF6B35"
+            android:paddingBottom="12dp" />
+
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/episodes_grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numColumns="4"
+            android:verticalSpacing="12dp"
+            android:horizontalSpacing="12dp"
+            android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>
